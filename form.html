@@ -4,41 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/905/045/small_2x/male-student-portrait-isolated-on-blue-background-pointing-photo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        label{
+            font-size: medium;
+            width: 150px;
+        }
+        form{
+            
+            height: 600px;
+            width: 500px;
+            background-color: transparent;
+            
+        }
+        fieldset{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .xy{
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 80px;
+        }
+        input {
+            width: 200px;
+        }
+        .gender {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .radio {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 5px;
+        }
+        .radio input {
+            width: 20px;
+            margin: 0;
+        }
+        .skills {
+            width: 200px;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        textarea {
+            width: 200px;
+        }
+        .submit-reset {
+            width: 500px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 30px;
+        }
+
+    </style>
 </head>
 <body>
     <form action="">
         <fieldset>
             <legend>Student Registration Form</legend>
-        <label>Student First Name</label><br>
+            <div class="xy">
+                <label>Student First Name</label>
+                <input type="text" value=""><br>
+            </div>
+        <div class="xy">
+        <label>Last name</label>
         <input type="text" value=""><br>
-        <label>Last name</label><br>
+    </div>
+    <div class="xy">
+        <label>student redg id</label>
         <input type="text" value=""><br>
-        <label>student redg id</label><br>
-        <input type="text" value=""><br>
-        <label>student email</label><br>
+    </div>
+    <div class="xy">
+        <label>student email</label>
         <input type="email" value=""><br>
-        <label>student date of birth</label><br>
+    </div>
+    <div class="xy">
+        <label>student date of birth</label>
         <input type="date"><br>
-        <label>Gender</label><br>
+    </div>
+    <div class="xy">
+        <label>Gender</label>
+        <div class="gender">
+        <div class="radio" >
+            <input type="radio" name="xyz">
+            <label>Male</label>
+        </div>
+        <div class="radio" >
         <input type="radio" name="xyz">
-        <label>Male</label>
-        <input type="radio" name="xyz">
-        <label>Female</label><br>
-        <label>Skills</label><br>
-        <input type="checkbox" value="">
-        <label>html</label><br>
-        <input type="checkbox"  value="">
-        <label>css</label><br>
+        <label>Female</label>
+        </div>
+        </div>
+
+
+    </div>
+    <div class="xy" >
+        <label>Skills</label>
+        <div class="skills">
+            <div class="radio" >
+                <input type="checkbox" value="">
+                <label>html</label><br>
+            </div>
+            <div class="radio" >
+                <input type="checkbox" value="">
+                <label>css</label><br>
+            </div>
+        <div class="radio" >
         <input type="checkbox"  value="">
         <label>java script</label><br>
+        </div>
+        <div class="radio" >
         <input type="checkbox" value="">
-        <label>react</label><br>
-        <label>resume</label><br>
+        <label>react</label>
+        </div>
+        </div>
+    </div>
+
+        <div class="xy">
+        <label>resume</label>
         <input type="file" value=""><br>
-        <label>Address</label><br>
+        </div>
+    <div class="xy">
+        <label>Address</label>
         <textarea></textarea><br>
-        <input type="submit">
-        <input type="reset">
+    </div>
+    <div class="submit-reset">
+        <input type="submit" style="background-color:bisque; width: 40%;">
+        <input type="reset" style="width: 40%;">
+    </div>
     </fieldset>
 
     </form>
